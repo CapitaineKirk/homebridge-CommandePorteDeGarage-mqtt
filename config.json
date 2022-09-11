@@ -1,0 +1,17 @@
+{    
+   "accessories": [
+       {
+       "accessory": "CommandePorteDeGarage-MQTT",
+       "name": "Porte de garage",
+       "module": "PorteDeGarage",
+       "actionneurPorte": 1,
+       "capteurOuvert": 2,
+       "capteurFerme": 1,
+       "delaiDeReaction" : 2,
+       "delaiDeMouvement" : 20,
+       "delaiInterCommandes" : 2,
+       "intervalLecture": 1,
+       "debug": 0
+       }
+   ]
+}
