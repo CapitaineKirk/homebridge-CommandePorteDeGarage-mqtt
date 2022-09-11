@@ -1,6 +1,6 @@
 # homebridge-CommandePorteDeGarage-TCP-KP-MQTT
 
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-TCP-KP-I2O2/blob/master/photos/TCP-KP-I2O2.jpg" width=150 align="right" />  
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/master/photos/HW-584.jpg" width=150 align="right" />  
 
 ## But
 
@@ -8,15 +8,15 @@ Envoyer des commandes au module HW-584 dans le cadre d'une integration dans home
 Ce module est équipé d'une connexion ethernet, de deux entrées et de deux sorties (relais).  
 
 ## Remerciements
-Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son travail. 
-Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alternative pour le HW-584 (respect).
+Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son travail.  
+Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alternatif pour le HW-584 (travail de pro, respect).
 
 ## Installation
 
 1. Installez [homebridge](https://github.com/nfarina/homebridge#installation-details)  
 2. Installez ce plugin: `npm install -g homebridge-CommandePorteDeGarage-MQTT`  
 3. Mettez à jour le fichier `config.json`  
-4. Configurez le module HW-584  
+4. Configurez le module HW-584 (voir la doc sur le site de Michael)
 
 ## Configuration
 
@@ -56,7 +56,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 Le but est de mettre en place des capteurs sur le mécanisme d'ouverture/fermeture de la porte de garage de manière non intrusive.  
   
 Pour cela, il faut installer des capteurs de feuillures sur le rail du moteur et placer un aimant sur le moteur.  
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-TCP-KP-I2O2/blob/master/photos/CapteurFerme.jpg" width=150 align="right" />
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-TCP-KP-I2O2/blob/master/photos/CapteurOuvert.jpg" width=150 align="right" />
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/master/photos/CapteurFerme.jpg" width=150 align="right" />
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/master/photos/CapteurOuvert.jpg" width=150 align="right" />
 
 La sortie du module, choisie pour commander la porte, est connectée en parallèle du bouton poussoir permettant l'ouverture ou la fermeture de celle-ci.  
