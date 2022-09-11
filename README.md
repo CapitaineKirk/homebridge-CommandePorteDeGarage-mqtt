@@ -1,21 +1,22 @@
-# homebridge-CommandePorteDeGarage-TCP-KP-I2O2
+# homebridge-CommandePorteDeGarage-TCP-KP-MQTT
 
 <img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-TCP-KP-I2O2/blob/master/photos/TCP-KP-I2O2.jpg" width=150 align="right" />  
 
 ## But
 
-Envoyer des commandes au module TCP-KP-I2O2 dans le cadre d'une integration dans homebridge d'un dispositif permettant de contrôler une porte du garage.
+Envoyer des commandes au module HW-584 dans le cadre d'une integration dans homebridge d'un dispositif permettant de contrôler une porte du garage.
 Ce module est équipé d'une connexion ethernet, de deux entrées et de deux sorties (relais).  
 
 ## Remerciements
 Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son travail. 
+Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alternative pour le HW-584 (respect).
 
 ## Installation
 
 1. Installez [homebridge](https://github.com/nfarina/homebridge#installation-details)  
-2. Installez ce plugin: `npm install -g homebridge-CommandePorteDeGarage-TCP-KP-I2O2`  
+2. Installez ce plugin: `npm install -g homebridge-CommandePorteDeGarage-MQTT`  
 3. Mettez à jour le fichier `config.json`  
-4. Configurez le module TCP-KP-I2O2  
+4. Configurez le module HW-584  
 
 ## Configuration
 
@@ -24,7 +25,7 @@ Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son tr
      {
        "accessory": "CommandePorteDeGarage-TCP-KP-I2O2",
        "name": "Porte de garage",
-       "adresseIp": "192.168.0.14",
+       "module": "PorteDeGarage",
        "actionneurPorte": 1,
        "capteurOuvert": 2,
        "capteurFerme": 1,
@@ -41,7 +42,7 @@ Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son tr
 | --- | --- | --- |
 | `accessory` | Doit être `CommandePorteDeGarage-TCP-KP-I2O2` | N/A |
 | `name` | Nom qui apparaîtra dans l'application Home | N/A |
-| `adresseIp` | Adresse Ip du module | N/A |
+| `module` | Nom déclaré dans la configuration du HW-584 | N/A |
 | `actionneurPorte` | Numéro de la sortie connectée à la commande d'ouverture/fermeture de la porte | N/A |
 | `capteurOuvert` | Numéro de l'entrée connectée au capteur détectant l'état ouvert | N/A |
 | `capteurFerme` | Numéro de l'entrée connectée au capteur détectant l'état fermé | N/A |
@@ -50,24 +51,6 @@ Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son tr
 | `intervalLecture` | Interval de lecture de l'état du module en seconde| 1 |
 | `debug` | Active le mode verbeux | 0 |
 
-## Protocole de commandes du TCP-KP-I2O2
-Ce n'est pas utile pour l'utilisation du plugin, mais permet de comprendre le fonctionnement de celui-ci.  
-  
-Port de connexion TCP (par défaut) : 12345  
-  
-Interrogation de l'entrée 1 : "AT+OCCH1=?\r\n"  
-Réponse si l'entrée 1 est active : "+OCCH1:1\r\n"  
-Réponse si l'entrée 1 est inactive : "+OCCH1:0\r\n"  
-  
-Interrogation de l'entrée 2 : "AT+OCCH2=?\r\n"  
-Réponse si l'entrée 2 est active : "+OCCH2:1\r\n"  
-Réponse si l'entrée 2 est inactive : "+OCCH2:0\r\n"  
-  
-Actionne la sortie 1 pendant 1s : "AT+STACH1=1,1\r\n"  
-Réponse après exécution : "OK\r\n"  
-  
-Actionne la sortie 2 pendant 1s : "AT+STACH2=1,1\r\n"  
-Réponse après exécution : "OK\r\n"  
 
 ## Installation
 Le but est de mettre en place des capteurs sur le mécanisme d'ouverture/fermeture de la porte de garage de manière non intrusive.  
@@ -77,4 +60,3 @@ Pour cela, il faut installer des capteurs de feuillures sur le rail du moteur et
 <img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-TCP-KP-I2O2/blob/master/photos/CapteurOuvert.jpg" width=150 align="right" />
 
 La sortie du module, choisie pour commander la porte, est connectée en parallèle du bouton poussoir permettant l'ouverture ou la fermeture de celle-ci.  
-# MON_PROJET
