@@ -1,11 +1,11 @@
-# homebridge-CommandePorteDeGarage-TCP-KP-MQTT
+# homebridge-CommandePorteDeGarage-MQTT
 
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/master/photos/HW-584.jpg" width=150 align="right" />  
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/main/photos/HW-584.jpg" width=150 align="right" />  
 
 ## But
 
 Envoyer des commandes au module HW-584 dans le cadre d'une integration dans homebridge d'un dispositif permettant de contrôler une porte du garage.
-Ce module est équipé d'une connexion ethernet, de deux entrées et de deux sorties (relais).  
+Ce module est équipé d'une connexion ethernet et de seize entrées/sorties configurables.  
 
 ## Remerciements
 Merci à l'équipe homebrdige (https://homebridge.io) pour la qualité de son travail.  
@@ -23,7 +23,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 ```json
 "accessories": [
      {
-       "accessory": "CommandePorteDeGarage-TCP-KP-I2O2",
+       "accessory": "CommandePorteDeGarage-MQTT",
        "name": "Porte de garage",
        "module": "PorteDeGarage",
        "actionneurPorte": 1,
@@ -56,7 +56,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 Le but est de mettre en place des capteurs sur le mécanisme d'ouverture/fermeture de la porte de garage de manière non intrusive.  
   
 Pour cela, il faut installer des capteurs de feuillures sur le rail du moteur et placer un aimant sur le moteur.  
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/master/photos/CapteurFerme.jpg" width=150 align="right" />
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/master/photos/CapteurOuvert.jpg" width=150 align="right" />
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/main/photos/CapteurFerme.jpg" width=150 align="right" />
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/main/photos/CapteurOuvert.jpg" width=150 align="right" />
 
 La sortie du module, choisie pour commander la porte, est connectée en parallèle du bouton poussoir permettant l'ouverture ou la fermeture de celle-ci.  
