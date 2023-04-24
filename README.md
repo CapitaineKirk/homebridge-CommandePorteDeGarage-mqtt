@@ -27,8 +27,8 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
        "name": "Porte de garage",
        "module": "PorteDeGarage",
        "actionneurPorte": 1,
-       "capteurOuvert": 2,
-       "capteurFerme": 1,
+       "capteurOuvert": 4,
+       "capteurFerme": 3,
        "delaiDeReaction" : 2,
        "delaiDeMouvement" : 20,
        "delaiInterCommandes" : 2,
@@ -40,7 +40,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 
 | Key | Description | Default |
 | --- | --- | --- |
-| `accessory` | Doit être `CommandePorteDeGarage-TCP-KP-I2O2` | N/A |
+| `accessory` | Doit être `CommandePorteDeGarage-TCP-KP-MQTT` | N/A |
 | `name` | Nom qui apparaîtra dans l'application Home | N/A |
 | `module` | Nom déclaré dans la configuration du HW-584 | N/A |
 | `actionneurPorte` | Numéro de la sortie connectée à la commande d'ouverture/fermeture de la porte | N/A |
