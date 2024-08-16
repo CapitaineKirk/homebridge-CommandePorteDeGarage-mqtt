@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-CommandePorteDeGarage-MQTT",
+  "name": "homebridge-CommandePorteDeGarage-mqtt",
   "version": "1.0.0",
   "description": "Homebridge plugin gérant une porte de garage avec le protocle mqtt",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT"
+    "url": "git+https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-mqtt"
   },
   "keywords": [
     "homebridge-plugin",
@@ -22,7 +22,7 @@
   "author": "Capitaine Kirk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/issues"
+    "url": "https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-mqtt/issues"
   },
-  "homepage": "https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT#readme"
+  "homepage": "https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-mqtt#readme"
 }
