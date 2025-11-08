@@ -1,4 +1,4 @@
-# homebridge-CommandePorteDeGarage-MQTT
+# homebridge-CommandePorteDeGarage-mqtt
 
 <img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/main/photos/HW-584.jpg" width=150 align="right" />  
 
