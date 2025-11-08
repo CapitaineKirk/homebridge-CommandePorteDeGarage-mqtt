@@ -1,7 +1,7 @@
 {    
    "accessories": [
        {
-       "accessory": "CommandePorteDeGarage-MQTT",
+       "accessory": "CommandePorteDeGarage-mqtt",
        "name": "Porte de garage",
        "module": "PorteDeGarage",
        "actionneurPorte": 1,
