@@ -6,7 +6,7 @@ var mqtt = require("mqtt");
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory('homebridge-CommandePorteDeGarage-MQTT', 'CommandePorteDeGarage-MQTT', PorteDeGarageAccessoryMqtt);
+  homebridge.registerAccessory('homebridge-CommandePorteDeGarage-mqtt', 'CommandePorteDeGarage-mqtt', PorteDeGarageAccessoryMqtt);
 };
 
 function PorteDeGarageAccessoryMqtt(log, config) {
