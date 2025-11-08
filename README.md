@@ -23,7 +23,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 ```json
 "accessories": [
      {
-       "accessory": "CommandePorteDeGarage-MQTT",
+       "accessory": "CommandePorteDeGarage-mqtt",
        "name": "Porte de garage",
        "module": "PorteDeGarage",
        "actionneurPorte": 1,
@@ -40,7 +40,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 
 | Key | Description | Default |
 | --- | --- | --- |
-| `accessory` | Doit être `CommandePorteDeGarage-MQTT` | N/A |
+| `accessory` | Doit être `CommandePorteDeGarage-mqtt` | N/A |
 | `name` | Nom qui apparaîtra dans l'application Home | N/A |
 | `module` | Nom déclaré dans la configuration du HW-584 | N/A |
 | `actionneurPorte` | Numéro de la sortie connectée à la commande d'ouverture/fermeture de la porte | N/A |
@@ -56,7 +56,7 @@ Merci à Michael Nielson (https://github.com/nielsonm236) pour son firmware alte
 Le but est de mettre en place des capteurs sur le mécanisme d'ouverture/fermeture de la porte de garage de manière non intrusive.  
   
 Pour cela, il faut installer des capteurs de feuillures sur le rail du moteur et placer un aimant sur le moteur.  
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/main/photos/CapteurFerme.jpg" width=150 align="right" />
-<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-MQTT/blob/main/photos/CapteurOuvert.jpg" width=150 align="right" />
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-mqtt/blob/main/photos/CapteurFerme.jpg" width=150 align="right" />
+<img src="https://github.com/CapitaineKirk/homebridge-CommandePorteDeGarage-mqtt/blob/main/photos/CapteurOuvert.jpg" width=150 align="right" />
 
 La sortie du module, choisie pour commander la porte, est connectée en parallèle du bouton poussoir permettant l'ouverture ou la fermeture de celle-ci.  
